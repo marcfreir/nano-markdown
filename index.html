@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Nano Markdown Editor</h1>
+        <textarea id="markdown-input" placeholder="Write your Markdown here..."></textarea>
+        <div class="controls">
+            <label for="font-selector">Select Font:</label>
+            <select id="font-selector">
+                <option value="cmunrm">Default (Computer Modern Roman)</option>
+                <option value="cmunbsr">Computer Modern Bold</option>
+                <option value="cmunui">Computer Modern Upright Italic</option>
+                <option value="cmunti">Computer Modern Italic</option>
+            </select>
+            <button id="save-button">Save as MD</button>
+            <input type="file" id="load-file" />
+        </div>
+        <h2>Preview</h2>
+        <div id="markdown-preview"></div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
